@@ -183,7 +183,7 @@
 
   <script>
   const params = new URLSearchParams(window.location.search);
-  const valor = params.get("_p");
+  const valor = params.get("campaign");
 
   const botones = document.querySelectorAll(".botones");
 
@@ -192,7 +192,7 @@
       const rutaBase = boton.getAttribute("data-ruta");
 
       if (valor) {
-        window.location.href = `${rutaBase}&campaign=${encodeURIComponent(valor)}`;
+        window.location.href = `${rutaBase}&_p=${encodeURIComponent(valor)}`;
       } else {
         window.location.href = rutaBase;
       }
