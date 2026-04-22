@@ -192,7 +192,7 @@
       const rutaBase = boton.getAttribute("data-ruta");
 
       if (valor) {
-        window.location.href = `${rutaBase}&_p=${encodeURIComponent(valor)}`;
+        window.location.href = `${rutaBase}&campaign=${encodeURIComponent(valor)}`;
       } else {
         window.location.href = rutaBase;
       }
